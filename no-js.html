@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please enable JavaScript</title>
+</head>
+<style>
+    body {
+        background-color: #f5f5f7;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+        font-size: clamp(1rem, 1vw, 2em);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: #8b0707;
+    }
+
+    p {
+        max-width: 50ch;
+    }
+
+    a {
+        color: #8b0707;
+        text-decoration: none;
+        border: solid 1px #8b0707;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        display: inline-block;
+        margin: 0.5rem 0;
+    }
+
+    a:hover {
+        background-color: #8b0707;
+        color: #fff;
+    }
+
+</style>
+<body>
+<main>
+    <h1>!Please enable JavaScript</h1>
+    <p>
+        In order to make your experience with our website better, we would like
+        to
+        ask you to enable JavaScript in your browser. Please enable JavaScript
+        in
+        your browser and then refresh this page.
+    </p>
+    <a href="index.html">Try again</a>
+</main>
+</body>
+
+<script>
+    let refreshPage = document.getElementsByTagName('a')[0];
+    refreshPage.addEventListener('click', function () {
+        window.location.history.go(-1);
+    });
+</script>
+</html>
