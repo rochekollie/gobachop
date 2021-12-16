@@ -1152,7 +1152,7 @@ button:hover,
 	color: yellow;
 }
 
-#shop-now:hover {
+#shop-now:hover, #submit-payment:hover {
 	color: #fff;
 }
 
